@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>Main Page</title>
+    
+       <link rel="stylesheet" type="text/css" href="mainpagestyle.css">
+
+       </head>
+
+       <body>
+        <img src="monkeyzoo1.gif" alt="monkey" class="monkey">
+        <img src="trees3.gif" alt="trees" class="trees">
+        
+        <img src="map board.png" alt="map board" class="map">
+        <div class="circle"></div>
+    
+        <img src="title main page10.png" alt="title" class="foreground-image">
+        
+        <a id="playButton" href="#">
+          <img id="playImage" src="music on.png" alt="Play Song">
+        </a>
+        <audio id="audioPlayer" src="zoo song MP.mp3" loop></audio>
+
+        <script>
+          
+          function checkGreeting() {
+              var urlParams = new URLSearchParams(window.location.search);
+              var greeting = urlParams.get('greeting');
+  
+              if (greeting) {
+                  alert(greeting); 
+              }
+          }
+  
+         
+          window.onload = function () {
+              checkGreeting();
+          };
+      </script>
+        
+  
+  <script>
+  var playButton = document.getElementById("playButton");
+  var playImage = document.getElementById("playImage");
+  var audioPlayer = document.getElementById("audioPlayer");
+
+  audioPlayer.pause();
+  playImage.src = "music off.png";
+  
+  playButton.addEventListener("click", function() {
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+      playImage.src = "music on.png";
+    } else {
+      audioPlayer.pause();
+      playImage.src = "music off.png";
+    }
+  });
+  
+  </script>
+
+      
+        <div class="custom-container">
+          <a href="About Us page.html">
+        <button class="about-button">ABOUT US</button>
+        </a>
+        </div>
+           
+        <div class="button-container">
+          <div class="content1">
+            <a href="animal.html"> 
+              <button class="animal-button">
+                <img class="animal-image" src="animal icon2.png" alt="animal game" title="animal">
+              </button>
+            </a>
+            <span class="label1">animal</span>
+          </div>
+          <div class="content2">
+            <a href="numberpage.html">
+              <button class="number-button">
+                <img class="number-image" src="number icon2.png" alt="number game" title="number">
+              </button>
+            </a>
+            <span class="label2">number</span>
+          </div>
+          <div class="content3">
+            <a href="shape pages.html">
+              <button class="shape-button">
+                <img class="shape-image" src="shape icon2.png" alt="shape game" title="shape">
+              </button>
+            </a>
+            <span class="label3">shape</span>
+          </div>
+          <div class="content4">
+            <a href="color.html">
+              <button class="colour-button">
+                <img class="colour-image" src="colour icon2.png" alt="colour game" title="colour">
+              </button>
+            </a>
+            <span class="label4">colour</span>
+          </div>
+        </div>
+       
+        
+        
+        </body>
+        </html>

@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Page</title>
+
+    <link rel="stylesheet" type="text/css" href="animalstyle.css">
+
+</head>
+<body>
+
+
+  <a href="main page.html" class="prevbutton">
+    <img src="prevbutton.png" alt="prevbutton">
+  </a>
+
+
+  
+  <a href="numberpage.html" class="nextbutton">
+    <img src="nextbutton.png" alt="nextbutton">
+  </a>
+
+    <div class="custom-container">
+        <a href="main page.html"> 
+            <button class="mainpage"> HOME </button>
+    </div>
+
+    <div class="custom-container">
+        <a href="About Us page.html">
+            <button class="exit"> EXIT </button>
+        </a>
+    </div>
+
+    <div class="custom-container">
+        <a href="numberpage.html">
+            <button class="number"> NUMBER </button>
+        </a>
+    </div>
+
+    <div class="custom-container">
+        <a href="shape pages.html">
+            <button class="shape"> SHAPE </button>
+        </a>
+    </div>
+
+    <div class="custom-container">
+        <a href="color.html">
+            <button class="colour"> COLOUR </button>
+        </a>
+    </div>
+
+
+    <div class="title">
+    <h1>Animals that begin with the letter ABC</h1>
+    </div>
+
+    
+
+   
+    
+    <img src="buaya.png" alt="buaya" class="buaya" id="buaya">
+    <script>
+      function playSound() {
+        var audio = new Audio('buaya.mp3');
+        audio.play();
+      }
+    
+      document.getElementById('buaya').addEventListener('click', playSound);
+    </script>
+    
+
+    <script>
+      function showImageDetails() {
+        var image = document.getElementById('buaya');
+        var popup = document.createElement('div');
+        popup.id = 'popup';
+    
+        popup.style.position = 'fixed';
+        popup.style.top = '50%';
+        popup.style.left = '50%';
+        popup.style.transform = 'translate(-50%, -50%)';
+        popup.style.width = '500px';
+        popup.style.height = '200px';
+        popup.style.backgroundColor = '#03C988';
+        popup.style.fontFamily = 'Comic Sans MS';
+        popup.style.border = 'double #D291BC';
+        popup.style.fontSize = '14px';
+        popup.style.borderRadius = '1em';
+    
+        var imageUrl = image.src;
+        var imageAlt = image.alt;
+        var popupContent = document.createElement('p');
+        popupContent.innerText = 'ALLIGATOR\n' +
+          '1) They are big, long reptiles that live in water.\n' +
+          '2) They have sharp teeth.\n' +
+          '3) They eat fish, turtles, and other animals.\n'+
+          '4) Alligators are not friendly and can be dangerous.\n'+
+          '5) If you see an alligator, stay away!';
+    
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+    
+        popup.appendChild(popupContent);
+    
+        document.body.appendChild(popup);
+    
+        var closeButton = document.createElement('button');
+        closeButton.textContent = 'Close';
+        closeButton.style.position = 'absolute';
+        closeButton.style.top = '170px';
+        closeButton.style.right = '10px';
+        closeButton.style.left = '10px';
+        closeButton.addEventListener('click', function() {
+          document.body.removeChild(popup);
+        });
+        popup.appendChild(closeButton);
+      }
+    
+      document.getElementById('buaya').onclick = showImageDetails;
+    </script>
+
+    
+    <img src="bird.png" alt="bird" class="bird" id="bird">
+   <script>
+         function playSound() {
+         var audio = new Audio('bird.mp3');
+         audio.play();
+     }
+
+  document.getElementById('bird').addEventListener('click', playSound);
+</script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('bird');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'BIRD\n' +
+        '1)Birds are animals that have wings and feathers.\n' +
+        '2)They lay eggs and can fly.\n' +
+        '3)Some birds can sing, while others cant.\n'+
+        '4)Birds are an important part of the ecosystem.\n'+
+        '5)Birds are fascinating creatures that can be enjoyed by people of all ages.'
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+  
+    document.getElementById('bird').onclick = showImageDetails;
+  </script>
+
+  
+
+
+
+    <img src="cat.png" alt="cat" class="cat" id="cat" >
+    <script>
+        function playSound() {
+          var audio = new Audio('cat.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('cat').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('cat');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'CAT\n' +
+        '1) Cats are furry animals with four legs and a tail.\n' +
+        '2) They have whiskers that help them feel their way around.\n' +
+        '3) Cats can see in the dark.\n'+
+        '4) They like to play with toys and chase mice.\n'+
+        '5) Cats can be cuddly and playful.'
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+  
+    document.getElementById('cat').onclick = showImageDetails;
+  </script>
+      
+      
+
+    <img src="dog.png" alt="dog" class="dog" id="dog" >
+    <script>
+        function playSound() {
+          var audio = new Audio('dog.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('dog').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('dog');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'DOG\n' +
+        '1) Dogs are mammals.\n' +
+        '2) Dogs have a keen sense of smell.\n' +
+        '3) Dogs are carnivores.\n'+
+        '4) Dogs are intelligent animals.\n'+
+        '5) Dogs make great companions.'
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+  
+    document.getElementById('dog').onclick = showImageDetails;
+  </script>
+
+
+    <img src="elephant copy.png" alt="elephant" class="elephant" id="elephant">
+    <script>
+        function playSound() {
+          var audio = new Audio('elephant.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('elephant').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('elephant');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'ELEPHANT\n' +
+        '1) Elephants are the largest land animals on Earth.\n' +
+        '2) Elephants can live for up to 70 years.\n' +
+        '3) Elephants are very strong. \n'+
+        '4) Elephants are very good swimmers.\n'+
+        '5) Elephants are endangered animals. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('elephant').onclick = showImageDetails;
+  </script>
+
+
+
+    <img src="fish.png" alt="fish" class="fish" id="fish">
+    <script>
+        function playSound() {
+          var audio = new Audio('fish.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('fish').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('fish');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'FISH\n' +
+        '1) Fish are animals that live in water.\n' +
+        '2) They have gills to breathe underwater.\n' +
+        '3) They have fins to help them swim. \n'+
+        '4) Fish are an important part of the ocean ecosystem.\n'+
+        '5) They are a source of food for many other animals, including humans. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('fish').onclick = showImageDetails;
+  </script>
+
+
+
+    <img src="giraffe.png" alt="giraffe" class="giraffe" id="giraffe" >
+    <script>
+        function playSound() {
+          var audio = new Audio('giraffe.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('giraffe').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('giraffe');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'GIRAFFE\n' +
+        '1) Giraffes are the tallest animals on Earth. \n' +
+        '2) They have long necks and legs.\n' +
+        '3) They eat leaves from trees.  \n'+
+        '4) They live in Africa.\n'+
+        '5) They are gentle animals. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('giraffe').onclick = showImageDetails;
+  </script>
+
+    <img src="hamster.png" alt="hamster" class="hamster" id="hamster" >
+
+    <script>
+        function playSound() {
+          var audio = new Audio('hamster.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('hamster').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('hamster');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'HAMSTER\n' +
+        '1) They are about the size of a mouse. \n' +
+        '2) They eat seeds, fruits, and vegetables.\n' +
+        '3) They can live for about 2-3 years. \n'+
+        '4) They are solitary animals, but they can live together in pairs.\n'+
+        '5) They are nocturnal, meaning they are most active at night. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('hamster').onclick = showImageDetails;
+  </script>
+
+
+    <img src="iguana.png" alt="iguana" class="iguana" id="iguana" >
+    <script>
+        function playSound() {
+          var audio = new Audio('iguna.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('iguana').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('iguana');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'IGUANA\n' +
+        '1) Iguanas are big lizards that live in warm places. \n' +
+        '2) They have long tails and sharp claws.\n' +
+        '3) They eat plants and insects. \n'+
+        '4) They eat plants and insects.\n'+
+        '5) They are not dangerous to humans. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('iguana').onclick = showImageDetails;
+  </script>
+
+
+    <img src="jaguar.png" alt="jaguar" class="jaguar" id="jaguar">
+    <script>
+        function playSound() {
+          var audio = new Audio('jaguar.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('jaguar').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('jaguar');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'JAGUAR\n' +
+        '1) Jaguars are the largest wild cats in the Americas. \n' +
+        '2) They can grow up to 6 feet long and weigh up to 250 pounds.\n' +
+        '3) Jaguars are solitary animals and only come together to mate.\n'+
+        '4) Females give birth to 2-4 cubs at a time.\n'+
+        '5) Cubs stay with their mother for about 2 years before they are old enough to live on their own. '
+
+       popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('jaguar').onclick = showImageDetails;
+  </script>
+
+    <img src="kangaroo.png" alt="kangaroo" class="kangaroo" id="kangaroo" >
+    <script>
+        function playSound() {
+          var audio = new Audio('kangaroo.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('kangaroo').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('kangaroo');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'KANGAROO\n' +
+        '1)Kangaroos are big, furry animals. \n' +
+        '2)They live in Australia.\n' +
+        '3)They have pouches on their stomachs where they carry their babies. \n'+
+        '4)Kangaroos are good jumpers and can hop up to 20 feet in one jump! \n'+
+        '5)They eat plants and leaves.'
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('kangaroo').onclick = showImageDetails;
+  </script>
+
+    <img src="lion.png" alt="lion" class="lion" id="lion">
+    <script>
+        function playSound() {
+          var audio = new Audio('lion.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('lion').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('lion');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'LION\n' +
+        '1)Lions are the largest cats in the world. \n' +
+        '2)Lions live in groups called prides.\n' +
+        '3)Lionesses do most of the hunting for the pride. \n'+
+        '4)Lions are social animals and they like to spend time together. \n'+
+        '5)Lions are apex predators, which means that they are at the top of the food chain. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('lion').onclick = showImageDetails;
+  </script>
+
+
+    <img src="mouse.png" alt="mouse" class="mouse" id="mouse" >
+    <script>
+        function playSound() {
+          var audio = new Audio('mouse.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('mouse').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('mouse');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'MOUSE\n' +
+        '1)A mouse is a small animal with a long tail. \n' +
+        '2)It has four legs and small ears.\n' +
+        '3)Mice eat plants and insects. \n'+
+        '4)They live in dark places, like holes in the ground or under furniture.  \n'+
+        '5)Mice are very good at climbing and swimming. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('mouse').onclick = showImageDetails;
+  </script>
+
+
+    <img src="Newt.png" alt="Newt" class="Newt" id="Newt">
+    <script>
+        function playSound() {
+          var audio = new Audio('newt.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('Newt').addEventListener('click', playSound);
+      </script>
+      
+      <script>
+        function showImageDetails() {
+          var image = document.getElementById('Newt');
+          var popup = document.createElement('div');
+          popup.id = 'popup';
+      
+          popup.style.position = 'fixed';
+          popup.style.top = '50%';
+          popup.style.left = '50%';
+          popup.style.transform = 'translate(-50%, -50%)';
+          popup.style.width = '500px';
+          popup.style.height = '200px';
+          popup.style.backgroundColor = '#03C988';
+          popup.style.fontFamily = 'Comic Sans MS';
+          popup.style.border = 'double #D291BC';
+          popup.style.fontSize = '14px';
+          popup.style.border.radius='1em';
+      
+          var imageUrl = image.src;
+          var imageAlt = image.alt;
+          var popupContent = document.createElement('p');
+          popupContent.innerText = 'NEWT\n' +
+            '1)Newts are amphibians, which means that they can live both in water and on land. \n' +
+            '2)Newts have moist skin that helps them to breathe underwater.\n' +
+            '3)Newts are carnivores, which means that they eat meat. \n'+
+            '4)Newts are an important part of the ecosystem.  \n'+
+            '5)Newts are a popular pet. '
+  
+            popupContent.style.textAlign = 'center';
+            popupContent.style.marginTop = '20px';
+            popupContent.style.lineHeight = '1.5';
+      
+          popup.appendChild(popupContent);
+      
+          document.body.appendChild(popup);
+      
+          var closeButton = document.createElement('button');
+          closeButton.textContent = 'Close';
+          closeButton.style.position = 'absolute';
+          closeButton.style.top = '170px';
+          closeButton.style.right = '10px';
+          closeButton.style.left = '10px';
+          closeButton.addEventListener('click', function() {
+            document.body.removeChild(popup);
+          });
+          popup.appendChild(closeButton);
+        }
+        document.getElementById('Newt').onclick = showImageDetails;
+      </script>
+
+    <img src="owl.png" alt="owl" class="owl" id="owl" >
+    <script>
+        function playSound() {
+          var audio = new Audio('owl.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('owl').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('owl');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'OWL\n' +
+        '1)Owls have feathers that help them fly silently. \n' +
+        '2)Owls have a special way of turning their heads that allows them to see almost 360 degrees around them.\n' +
+        '3)Owls are very good at hunting.\n'+
+        '4)Owls are important predators. \n'+
+        '5)Owls are fascinating creatures. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('owl').onclick = showImageDetails;
+  </script>
+
+  
+
+    <img src="pig.png" alt="pig" class="pig" id="pig" >
+    <script>
+        function playSound() {
+          var audio = new Audio('pig.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('pig').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('pig');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'PIG\n' +
+        '1)Pigs are very intelligent animals. \n' +
+        '2)Pigs can learn their names and tricks, and they can even be trained to use a litter box.\n' +
+        '3)They are usually brown or pink, and they have soft fur.\n'+
+        '4)They are very social animals, and they live in groups called herds.\n'+
+        '5)Pigs can be very friendly and playful animals. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('pig').onclick = showImageDetails;
+  </script>
+
+    <img src="quail.png" alt="quail" class="quail" id="quail" >
+    <script>
+        function playSound() {
+          var audio = new Audio('quail.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('quail').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('quail');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'QUAIL\n' +
+        '1)Quail birds are small, brown birds that live in the ground. \n' +
+        '2)They have short tails and long legs.\n' +
+        '3)Quail birds lay eggs in nests that they build on the ground. \n'+
+        '4)Quail birds eat seeds, insects, and small animals.\n'+
+        '5)They are good at hiding from predators. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('quail').onclick = showImageDetails;
+  </script>
+
+    <img src="rabbit.png" alt="rabbit" class="rabbit" id="rabbit" >
+    <script>
+        function playSound() {
+          var audio = new Audio('rabbit.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('rabbit').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('rabbit');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'RABBIT\n' +
+        '1)Rabbits are mammals, which means they give birth to live young. \n' +
+        '2)Rabbits have four legs and a long tail.\n' +
+        '3)Rabbits are herbivores, which means they eat plants. \n'+
+        '4)Rabbits are social animals and live in groups called warrens.\n'+
+        '5)Rabbits can live for up to 10 years. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('rabbit').onclick = showImageDetails;
+  </script>
+
+    <img src="snake copy.png" alt="snake" class="snake" id="snake">
+    <script>
+        function playSound() {
+          var audio = new Audio('snake.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('snake').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('snake');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'SNAKE\n' +
+        '1)Snakes are long, cold-blooded animals with no legs. \n' +
+        '2)They have smooth, scaly skin and can move very quickly. \n' +
+        '3)Snakes eat other animals, such as mice, frogs, and birds. \n'+
+        '4)Some snakes are poisonous, but most are not.\n'+
+        '5)Snakes are found all over the world, in many different habitats. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('snake').onclick = showImageDetails;
+  </script>
+
+
+    <img src="tiger.png" alt="tiger" class="tiger" id="tiger" >
+    <script>
+        function playSound() {
+          var audio = new Audio('tiger.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('tiger').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('tiger');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'TIGER\n' +
+        '1)Tigers are big cats with orange fur and black stripes. \n' +
+        '2)Tigers are big cats with orange fur and black stripes.\n' +
+        '3)Tigers are carnivores and eat meat. \n'+
+        '4)Tigers are solitary animals and only come together to mate.\n'+
+        '5)Tigers are solitary animals and only come together to mate. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('tiger').onclick = showImageDetails;
+  </script>
+
+    <img src="urial.png" alt="urial" class="urial" id="urial" >
+    <script>
+        function playSound() {
+          var audio = new Audio('urial.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('urial').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('urial');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'URIAL\n' +
+        '1)Thay are animals with hooves. \n' +
+        '2)They are important animals in many ecosystems.'
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('urial').onclick = showImageDetails;
+  </script>
+
+    <img src="vampire-bat.png" alt="vampire-bat" class="vampire-bat" id="vampire-bat" >
+    <script>
+        function playSound() {
+          var audio = new Audio('vampirebat.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('vampire-bat').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('vampire-bat');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'VAMPIRE BAT\n' +
+        '1)Vampire bats are the only mammals that eat blood. \n' +
+        '2)They are about the size of a mouse.\n' +
+        '3)They have sharp teeth that they use to cut through the skin of their prey. \n'+
+        '4)They can only eat about 1 ounce of blood per night.\n'+
+        '5)Vampire bats are not very social animals. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('vampire-bat').onclick = showImageDetails;
+  </script>
+
+    <img src="w-bug.png" alt="w-bug" class="w-bug" id="w-bug">
+    <script>
+        function playSound() {
+          var audio = new Audio('wbug.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('w-bug').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('w-bug');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'WATER BUG\n' +
+        '1)Water bugs come in many different shapes and sizes. \n' +
+        '2)Water bugs can live in all types of water, including ponds, lakes, rivers, and even puddles.\n' +
+        '3)Water bugs are predators. \n'+
+        '4)Water bugs are not dangerous to humans.\n'+
+        '5)Water bugs are an important part of the ecosystem. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('w-bug').onclick = showImageDetails;
+  </script>
+
+    <img src="whale.png" alt="whale" class="whale" id="whale">
+    <script>
+        function playSound() {
+          var audio = new Audio('whale.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('whale').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('whale');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'WHALE\n' +
+        '1)Whales are big animals that live in the ocean. \n' +
+        '2)They have long bodies and big tails.\n' +
+        '3)Some whales have teeth, while others have baleen. \n'+
+        '4)Whales can be found in all oceans of the world.\n'+
+        '5)They are also popular tourist attractions. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('whale').onclick = showImageDetails;
+  </script>
+
+    <img src="Xiaosaurus.png" alt="Xiaosaurus" class="Xiaosaurus" id="Xiaosaurus" >
+    <script>
+        function playSound() {
+          var audio = new Audio('Xiaosaurus.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('Xiaosaurus').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('Xiaosaurus');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'XIAOSAURUS\n' +
+        '1)Xiaosaurus is a small dinosaur that is about the size of a chicken. \n' +
+        '2)It has a long neck and tail, and its skin is covered in scales. \n' +
+        '3)Xiaosaurus is a herbivore, which means that it eats plants. \n'+
+        '4)It lives in forests and grasslands.\n'+
+        '5)It is an active dinosaur that is always on the move. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('Xiaosaurus').onclick = showImageDetails;
+  </script>
+
+
+    <img src="yak.png" alt="yak" class="yak" id="yak" >
+    <script>
+        function playSound() {
+          var audio = new Audio('yak.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('yak').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('yak');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'YAK\n' +
+        '1)Yaks are big, furry animals that live in the mountains. \n' +
+        '2)They have long horns and thick fur that helps them stay warm in the cold weather.\n' +
+        '3)Yaks are herbivores and eat grass, leaves, and twigs. \n'+
+        '4)They are also very strong and can carry heavy loads. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('yak').onclick = showImageDetails;
+  </script>
+
+    <img src="zebra.png" alt="zebra" class="zebra" id="zebra">
+    <script>
+        function playSound() {
+          var audio = new Audio('zebra.mp3');
+          audio.play();
+        }
+      
+        document.getElementById('zebra').addEventListener('click', playSound);
+      </script>
+
+<script>
+    function showImageDetails() {
+      var image = document.getElementById('zebra');
+      var popup = document.createElement('div');
+      popup.id = 'popup';
+  
+      popup.style.position = 'fixed';
+      popup.style.top = '50%';
+      popup.style.left = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+      popup.style.width = '500px';
+      popup.style.height = '200px';
+      popup.style.backgroundColor = '#03C988';
+      popup.style.fontFamily = 'Comic Sans MS';
+      popup.style.border = 'double #D291BC';
+      popup.style.fontSize = '14px';
+      popup.style.border.radius='1em';
+  
+      var imageUrl = image.src;
+      var imageAlt = image.alt;
+      var popupContent = document.createElement('p');
+      popupContent.innerText = 'ZEBRA\n' +
+        '1)Zebras are black and white animals that live in Africa. \n' +
+        '2)Zebras are herbivores, which means they eat plants.\n' +
+        '3)Zebras are herbivores, which means they eat plants. \n'+
+        '4)Zebras are herbivores, which means they eat plants.\n'+
+        '5)Zebras are very fast animals and can run up to 30 miles per hour. '
+
+        popupContent.style.textAlign = 'center';
+        popupContent.style.marginTop = '20px';
+        popupContent.style.lineHeight = '1.5';
+  
+      popup.appendChild(popupContent);
+  
+      document.body.appendChild(popup);
+  
+      var closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '170px';
+      closeButton.style.right = '10px';
+      closeButton.style.left = '10px';
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(popup);
+      });
+      popup.appendChild(closeButton);
+    }
+    document.getElementById('zebra').onclick = showImageDetails;
+  </script>
+
+    
+    <a id="playButton" href="#">
+        <img id="playImage" src="music on.png" alt="Play Song">
+      </a>
+      <audio id="audioPlayer" src="alphabetmusic.mp3" loop></audio>
+
+              
+<script>
+var playButton = document.getElementById("playButton");
+var playImage = document.getElementById("playImage");
+var audioPlayer = document.getElementById("audioPlayer");
+
+audioPlayer.pause();
+playImage.src = "music off.png";
+
+playButton.addEventListener("click", function() {
+if (audioPlayer.paused) {
+audioPlayer.play();
+playImage.src = "music on.png";
+} else {
+audioPlayer.pause();
+playImage.src = "music off.png";
+}
+});
+
+</script>
+</body>
+</html>
+

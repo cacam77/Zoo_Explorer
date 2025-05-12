@@ -1,0 +1,213 @@
+
+body {
+        background-image: url(latestbg.PNG);
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+    .kancil {
+                animation: animate 10s linear infinite;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                z-index: 2;
+                width: 150px;
+                height: 150px;
+        
+             }
+
+    @keyframes animate {
+                            0%{
+                                transform: translateX(calc(-100% - 600px));
+                            }
+                            50%{
+                                transform: translateX(calc(100% + 600px));
+                            }
+                            50.01%{
+                                transform: translateX(calc(100% + 600px)) rotateY(180deg)
+                            }
+                            100%{
+                                transform: translate(calc(-100% - 600px)) rotateY(180deg);
+                            }
+    }
+
+    .custom-container {
+        position: relative;
+      }
+    
+    .mainpage {
+        font-family:'Comic Sans MS', 'sans-serif' ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 50px;
+        padding: 8px 16px;
+        background-color: #DF2E38;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 2em;
+        cursor: pointer;
+        transition: 0.1s ease;
+        border-width: 0;
+        box-shadow: rgb(158, 32, 51) 0px 7px 0px 0px;
+      }
+    
+    
+      .mainpage:hover,
+      .exit:hover {
+        background-color: rgb(255, 56, 86);
+      }
+    
+      .mainpage:active,
+      .exit:active {
+        transform: translateY(1px);
+      }
+      
+      
+      button:hover
+       {
+        transform: translateY(-4px);
+      }
+      
+      button:active
+       {
+        transform: translateY(4px);
+      }
+    
+     .button-container  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 400px;
+        row-gap: 5px;
+      }
+
+      .exit {
+        font-family:'Comic Sans MS', 'sans-serif' ;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 50px;
+        padding: 8px 16px;
+        background-color: #DF2E38;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 2em;
+        cursor: pointer;
+        transition: 0.1s ease;
+        border-width: 0;
+        box-shadow: rgb(158, 32, 51) 0px 7px 0px 0px;
+      }
+
+    .prevbutton {
+                border: none;
+                background: none;
+                padding: 0;
+                cursor: pointer;
+    }
+
+    .prevbutton img {
+                    width: 180px;
+                    height: 120px;
+                    position: absolute;
+                    bottom: 40px;
+                    left: 30px;
+    }
+
+    .nextbutton {
+                border: none;
+                background: none;
+                padding: 0;
+                cursor: pointer;
+    }
+
+    .nextbutton img {
+                    width: 180px;
+                    height: 120px;
+                    position: absolute;
+                    bottom: 40px;
+                    right: 30px;
+    }
+    
+    #playfulmusic {
+                    display: none;
+                
+    }
+
+    .image-container {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 250px;
+                        height: 100px;
+                        margin-left: 170px;
+                        
+
+    }
+ 
+    
+    .yourGuess {
+        font-size: 25px;
+        text-align: center;
+      }
+      
+    .guessbutton {
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffd700;
+        font-size: 20px;
+        border-radius: 12px;
+      }
+      
+      .guessbutton:hover {
+        background-color: blue;
+        color: white;
+      }
+      
+     
+      body {
+        min-height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+    
+      
+      .big-background {
+        background-image: url("http://wnct.images.worldnow.com/images/6664982_G.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px;
+        position: relative;
+       
+      }
+      
+      .main-background {
+        padding: 11%;
+        font-family: 'Comic Sans Ms', 'Poppins', 'sans-serif';
+        font-size: 13px;
+        color: rgb(248, 244, 244);
+        text-align: center;
+        margin: 12% 15% 10% 15%;
+        height: 10%;
+        margin-top: -70px;
+      }
+
+      .hint {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+     
